@@ -1,0 +1,59 @@
+export NO_CURL=1
+export NO_OPENSSL=1
+
+git add mygit_notes.txt
+git add sizes.c 
+
+git branch mygit-branch_name        # create a branch
+git branch -d mygit-branch-name     # delete a branch
+git branch -m mygit-branch-name newgit-branch-name 
+git branch -r
+
+git checkout -b mygit-branch-name
+git checkout master
+
+git clone git@github.com:ap120266/mygit-repo-name.git
+git clone git@github.com:azure/azure-rest-api-specs.git
+git clone git@github.com:azure/azure-sdk-for-python.git 
+git clone git@github.td.teradata.com:bricklin/bricklin_build_script.git
+
+git commit -a
+git commit -m "add new file: sizes.c"
+git commit -m "test a modification" sizes.c 
+
+git config --get-all
+git config --global --list
+git config --global core.autocrlf input
+git config --global push.default simple
+git config --global user.email 
+git config --global user.email "ap120266@teradata.com"
+git config --global user.name
+git config --global user.name "ap120266"
+
+git diff
+git diff --staged 
+git fetch
+git --help
+git help init
+git info
+git log
+git merge master 
+git merge mygit-branch-name 
+
+git pull
+git push 
+git push origin master 
+git push --set-upstream origin master 
+git push --set-upstream origin mygit-branch-name
+
+git remote set-url master https://github.com/githubteacher/github-for-developers-sept-2015.git
+git remote set-url origin git@github.com:githubteacher/github-for-developers-sept-2015.git
+git remote set-url origin https://github.com/github/ReactiveCocoa.git
+git remote set-url origin https://github.com/githubteacher/github-for-developers-sept-2015.git
+git remote -v
+
+git show
+git status
+git --version
+
+zypper install git
