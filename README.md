@@ -1,2 +1,1 @@
-# mygit-repo-name
-training repository
+# my_repo
