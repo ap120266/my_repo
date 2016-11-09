@@ -24,6 +24,37 @@ To git@github.com:ap120266/my_repo.git
    151f610..960ca20  master -> master
 
 
+steps to change a file to my_repo:
+==================================
+
+# vi mygit-notes.txt
+# git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   mygit-notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+# git commit -m "test a modification" mygit-notes.txt 
+[master 3696bf8] test a modification
+ 1 file changed, 31 insertions(+)
+# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+# git push --set-upstream origin master
+Counting objects: 3, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 730 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To git@github.com:ap120266/my_repo.git
+   960ca20..3696bf8  master -> master
+Branch master set up to track remote branch master from origin.
 
 
 list of commands i've used:
