@@ -5,7 +5,7 @@
 **
 ** File: src/sizes.c
 **
-** Description: used to determine the sizeof built-in data types
+** Description: used to determine the sizeof built-in data types on a particular platform
 ** 
 */
 
@@ -13,16 +13,28 @@
 
 int main() 
 {
-     printf("sizeof(char)    = %d\n" , sizeof(char));
-     printf("sizeof(short)   = %d\n" , sizeof(short));
-     printf("sizeof(int)     = %d\n" , sizeof(int));
-     printf("sizeof(long)    = %d\n" , sizeof(long));
-     printf("sizeof(lg long) = %d\n" , sizeof(long long));
-     printf("sizeof(float)   = %d\n" , sizeof(float));
-     printf("sizeof(double)  = %d\n" , sizeof(double));
-     printf("sizeof(void*)   = %d\n" , sizeof(void*));
-     printf("sizeof(char*)   = %d\n" , sizeof(char*));
-     printf("sizeof(size_t)  = %d\n" , sizeof(size_t));
-     printf("sizeof(size_t*) = %d\n" , sizeof(size_t*));
-     return 0;
+     printf("sizeof(char)    = %d\n"
+            "sizeof(short)   = %d\n"
+            "sizeof(int)     = %d\n"
+            "sizeof(long)    = %d\n"
+            "sizeof(lg long) = %d\n"
+            "sizeof(float)   = %d\n"
+            "sizeof(double)  = %d\n"
+            "sizeof(void*)   = %d\n"
+            "sizeof(char*)   = %d\n"
+            "sizeof(size_t)  = %d\n"
+            "sizeof(size_t*) = %d\n"
+            ,sizeof(char)
+            ,sizeof(short)
+            ,sizeof(int)
+            ,sizeof(long)
+            ,sizeof(long long)
+            ,sizeof(float)
+            ,sizeof(double)
+            ,sizeof(void*)
+            ,sizeof(char*)
+            ,sizeof(size_t)
+            ,sizeof(size_t*));
+
+    return 0;
 }
