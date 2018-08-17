@@ -17,6 +17,7 @@ int main()
             "sizeof(short)   = %d\n"
             "sizeof(int)     = %d\n"
             "sizeof(long)    = %d\n"
+            "sizeof(lg int)  = %d\n"
             "sizeof(lg long) = %d\n"
             "sizeof(float)   = %d\n"
             "sizeof(double)  = %d\n"
@@ -28,6 +29,7 @@ int main()
             ,sizeof(short)
             ,sizeof(int)
             ,sizeof(long)
+            ,sizeof(long int)
             ,sizeof(long long)
             ,sizeof(float)
             ,sizeof(double)
